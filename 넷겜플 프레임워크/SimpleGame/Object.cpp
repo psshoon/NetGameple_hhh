@@ -35,6 +35,10 @@ void Object::SetLife(float Llife) {
 	life = Llife;
 }
 
+void Object::update(float elapsedTime)
+{
+}
+
 void Object::SetType(ObjType tType) {
 	if (tType == OBJ_PLAYER) {
 		type = OBJ_PLAYER;
@@ -46,6 +50,6 @@ void Object::SetType(ObjType tType) {
 		type = OBJ_BLOCK;
 	}
 	else if (tType == OBJ_ITEM) {
-		type = OBJ_ITEM
+		type = OBJ_ITEM;
 	}
 }

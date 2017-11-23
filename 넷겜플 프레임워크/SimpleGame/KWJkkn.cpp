@@ -8,6 +8,7 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY.
 */
 
+
 #include "stdafx.h"
 #include <iostream>
 #include "Dependencies\glew.h"
@@ -20,7 +21,7 @@ but WITHOUT ANY WARRANTY.
 Renderer *g_Renderer = NULL;
 MainGame* g_MainGame = NULL;
 
-SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);
+SOCKET sock;
 
 void RenderScene(void)
 {
@@ -73,6 +74,16 @@ int main(int argc, char **argv)
 	{
 		std::cout << "GLEW 3.0 not supported\n ";
 	}
+
+	// 윈속 초기화
+	WSADATA wsa;
+	if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0)
+		return 1;
+
+	// socket()
+	sock = socket(AF_INET, SOCK_STREAM, 0);
+	if (sock == INVALID_SOCKET)
+		return 0;
 
 	// Initialize Renderer
 	g_Renderer = new Renderer(500, 500);

@@ -40,12 +40,6 @@
     <Filter Include="02.Scene\01.Wait">
       <UniqueIdentifier>{ee822a65-8b86-4bf4-b4f7-b0c0eea7324f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="05.Object">
-      <UniqueIdentifier>{59467b73-952c-4563-bc2f-dcab870c474e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="01.GameObject\Object">
-      <UniqueIdentifier>{4a9c2ad3-4b1c-4bac-97ba-df9392ccc360}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -88,7 +82,7 @@
       <Filter>99.Default\헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Object.h">
-      <Filter>01.GameObject\Object</Filter>
+      <Filter>01.GameObject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -117,7 +111,7 @@
       <Filter>02.Scene\01.Wait</Filter>
     </ClCompile>
     <ClCompile Include="Object.cpp">
-      <Filter>01.GameObject\Object</Filter>
+      <Filter>01.GameObject</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

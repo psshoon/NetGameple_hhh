@@ -2,6 +2,7 @@
 #include "SceneMgr.h"
 #include "Scene.h"
 #include "LogInScene.h"
+#include "WaitScene.h"
 
 INIT_SINGLETON(SceneMgr)
 
@@ -52,6 +53,7 @@ void SceneMgr::SetScene(SceneType _SceneType)
 		break;
 
 	case SCENE_WAIT:
+		m_Scene = new WaitScene();
 		break;
 
 	case SCENE_STAGE:

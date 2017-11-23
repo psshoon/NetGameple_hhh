@@ -13,6 +13,7 @@ private:
 	float vx, vy, vz;		// 속도
 	float life;				// 생명
 	ObjType type;
+	ObjInfo			m_Info;
 
 private:
 	virtual void SetPosition(float x, float y, float z, float size);
