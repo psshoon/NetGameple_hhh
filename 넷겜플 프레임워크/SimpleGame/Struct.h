@@ -24,6 +24,8 @@ typedef struct tagObjInfo
 		: Pos(_pos), Size(_size), Type(_type), IsDead(_isDead) { }
 }ObjInfo;
 
+// 서버 <-> 클라간 패킷데이터 정의
+
 class CFromServerData
 {
 private:
@@ -38,17 +40,17 @@ private:
 	//Item ItemInfo[ItemCnt];         // 현재 화면에 그려지는 아이템의 정보
 };
 
-class FromClientProtocol // 각 클라이언트에서 충돌체크 및 동기화를 위하여 사용자 및 총알의 정보 서버로 넘겨   줄 때 사용되는 구조체.
+class CFromClientData // 각 클라이언트에서 충돌체크 및 동기화를 위하여 사용자 및 총알의 정보 서버로 넘겨   줄 때 사용되는 구조체.
 {
 	string ID; // 플레이어의 아이디
 	int BulletCnt; // 총알의 개수
-	Player PlayerInfo; // 플레이어의 정보
-					   //Bullet BulletInfo[BulletCnt]; // 총알의 정보
+	//Player PlayerInfo; // 플레이어의 정보
+	//Bullet BulletInfo[BulletCnt]; // 총알의 정보
 };
 
-class RankingProtocol // 게임이 끝난 후 랭킹을 송/수신 할 때 사용되는 구조체
+class CRankingData // 게임이 끝난 후 랭킹을 송/수신 할 때 사용되는 구조체
 {
 	int RankCnt; // 랭킹에 기록된 랭킹 개수
-	Time time; // 랭킹에 기록된 시간
-			   //string Name[RankCnt][3] // 랭킹을 기록한 아이디 나열
+	//Time time; // 랭킹에 기록된 시간
+	//string Name[RankCnt][3] // 랭킹을 기록한 아이디 나열
 };
