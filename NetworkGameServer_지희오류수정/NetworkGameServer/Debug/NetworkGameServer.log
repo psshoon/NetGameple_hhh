@@ -1,0 +1,3 @@
+﻿  ServerMain.cpp
+c:\users\pssho\desktop\networkgameserver_지희오류수정\networkgameserver\servermain.cpp(60): warning C4101: 'buf' :참조되지 않은 지역 변수입니다.
+  NetworkGameServer.vcxproj -> C:\Users\pssho\Desktop\NetworkGameServer_지희오류수정\Debug\NetworkGameServer.exe

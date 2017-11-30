@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\00.ServerMain">
+      <UniqueIdentifier>{88f42a10-a747-450c-b798-08653528098f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.GameObject">
+      <UniqueIdentifier>{c342eb4b-edf7-47bd-be15-87f330dd9a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.GameObject\Block">
+      <UniqueIdentifier>{07660906-536d-41c6-b74e-91f3901b8f51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.GameObject\Bullet">
+      <UniqueIdentifier>{62071bca-7ea5-4f53-83dd-20bb622798d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.GameObject\Item">
+      <UniqueIdentifier>{e634037b-2027-4b9a-9993-a7723bf2c821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.GameObject\Player">
+      <UniqueIdentifier>{9006ca0f-403e-44c7-a56e-213ef2c6037c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Define.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>소스 파일\01.GameObject\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>소스 파일\01.GameObject\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>소스 파일\01.GameObject\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>소스 파일\01.GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>소스 파일\01.GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ServerMain.cpp">
+      <Filter>소스 파일\00.ServerMain</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>소스 파일\01.GameObject\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>소스 파일\01.GameObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>소스 파일\01.GameObject\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\01.GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>소스 파일\01.GameObject</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
